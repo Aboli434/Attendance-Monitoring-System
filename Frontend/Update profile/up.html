@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="up.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Edit Profile</h2>
+        <form id="profileForm">
+            <div class="profile-photo">
+                <img src="download.jpg" alt="Profile Photo" id="profile-image">
+                <label for="photo-input">Edit Photo</label>
+                <input type="file" id="photo-input" accept="image/*" style="display: none;">
+            </div>
+            <div class="profile-info">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="prn-no">PRN No:</label>
+                <input type="text" id="prn-no" name="prn-no" required>
+
+                <label for="contact-number">Contact Number:</label>
+                <input type="tel" id="contact-number" name="contact-number" required>
+
+                <label for="fingerprint">Fingerprint:</label>
+                <div id="fingerprint-placeholder">
+                    </div>
+            </div>
+            <button type="submit">Save</button>
+            <button type="button">Cancel</button>
+        </form>
+    </div>
+    <script src="up.js"></script>
+</body>
+</html>

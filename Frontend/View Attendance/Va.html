@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Attendance Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="Va.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Student Attendance</h1>
+    <div class="attendance-summary">
+      <p>Total Days: <span id="total-days"></span></p>
+      <p>Present Days: <span id="present-days"></span></p>
+      <p>Absent Days: <span id="absent-days"></span></p>
+      <p>Attendance Percentage: <span id="attendance-percentage"></span>%</p>
+    </div>
+    <div class="chart-container">
+        <canvas id="attendanceChart"></canvas>
+    </div>
+  </div>
+  <script src="Va.js"></script>
+</body>
+</html>
